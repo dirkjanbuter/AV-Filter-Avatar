@@ -406,13 +406,6 @@ int filterstep(unsigned char *buffer, int w, int h, unsigned int color, char *te
     
 int filteraudio(float *frame, int64_t framecount, float elapsed)
 {
-	
-	
-	return 1;
-}
-
-int filtermic(float *frame, int64_t framecount, float elapsed)
-{
 	float maxf;
 	int i;
 	maxf = 0.0f;
@@ -432,6 +425,13 @@ int filtermic(float *frame, int64_t framecount, float elapsed)
         {
           _scalefactor = 0.1f;
         }
+	
+	return 1;
+}
+
+int filtermic(float *frame, int64_t framecount, float elapsed)
+{
+	
 	return 1;
 }
 
